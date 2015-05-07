@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#menu {
+	float: right;
+	margin: 50px 0 0;
+	list-style: none;
+}
+#menu li {
+	float: left;
+}
+#menu li a {
+	display: block;
+	width: 200px;
+	height: 200px;
+	text-indent: -9999px;
+}
+#home {
+	background-image: url('img/icon-car.png');
+}
+#abgne_tw {
+	background-image: url('abgne_tw.png');
+}
+#jellyyoyo {
+	background-image: url('jellyyoyo.png');
+}
+#jquery {
+	background-image: url('jquery.png');
+}
+#flycan {
+	background-image: url('flycan.png');
+}
+#menuMask {
+	position: absolute;
+	z-index: 10000;
+	display: block;
+	left: 0;
+}
+.bhr {
+	clear: both;
+	height: 15px;
+	z-index: 200;
+	margin: 0 auto;
+	background-color: #000;
+}

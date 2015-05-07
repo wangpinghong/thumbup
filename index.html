@@ -1,89 +1,81 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<title>Thumbup</title>
-</script>
-<style type="text/css"> 
-	#title-img{
-		margin-top:-100px;
-		width:100%; 
-		height:600px;
-	}
-	#title-title{
-		position:absolute; 
-		z-index:10; 
-		top:46px; 
-		left:34%; 
-		font-family:微軟正黑體; 
-		letter-spacing:8px;
-		color: #708090 ;
-		font-size:48px;
-		font-weight: bold;
-		border-bottom-style:solid; 
-		border-bottom-width:medium;
-	}
-	#title-content1{
-		position:absolute; 
-		z-index:10; 
-		letter-spacing:4px;
-		top:116px; 
-		left:44%; 
-		font-family:微軟正黑體; 
-		color:#6C7B8B;
-		font-size:20px;
-	}
-	#start-btn{
-		position:absolute; 
-		z-index:10; 
-		letter-spacing:4px;
-		top:220px; 
-		left:44%; 
-		font-family:微軟正黑體; 
-		color:#6C7B8B;
-		font-size:35px;
-		-webkit-border-radius: 10px;
-		-webkit-box-shadow: inset #FFF 0 0 60px;
-		background-size: 50%!important;
-		display: inline-block;
-		margin: 0 3px;
-	}
-	#footer-img{
-		margin-top:-100px;
-		width:100%; 
-		height:100%;
-	}
-	.footer {
-    	overflow: hidden;
-	}
-	.right-footer {
-	    float: right;
-	    width: 50%;
-	}
-	.left=footer {
-	    float: left;
-	    width: 50%;
-	}
-</style>
-</head>
-<body>
-	<div class="title">
-		<img id="title-img" src="img/mainpage.jpg"></img>
-        <a id="title-title" >Thumb  a  Ride</a>
-		<a id="title-content1" >why not <span style="font-weight: bold;">Share a Ride</span> ?</a>
-		<button type="button" id="start-btn" >START</button>
-	</div>
-	<div class="footer">
-		<div class="right-footer">
-			<img id="icon-people" src="img/icon-people.png" href=""></img>
+<meta charset="utf-8" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="htcmenu.js"></script>
+	<head>
+		<style type="text/css"> 
+		   body{
+		  		background-attachment: fixed; 
+		  		background-image: url('img/mainpage-bg.jpg'); 
+		  		background-repeat: no-repeat;
+		  		width:100%;
+		  		height:60%;
+		  		background-position: top ,center ; 	
+		  				
+		   }
+		   
+		   #findcar{
+		  		margin-top: 30%;
+		  		margin-left:1%;
+		  		height:12%;
+		  		width:12%;
+		  		float:left;
+		   }
+		   
+		   #findpeople{
+		  		margin-top: 30%;
+		  		margin-right: 30%;
+		  		height:12%;
+		  		width:15%;
+		  		float:right;
+		   }
+		   
+		   #title-content1{
+				position:absolute; 
+				z-index:10; 
+				letter-spacing:4px;
+				margin-top:7%; 
+				left:50%; 
+				font-family:微軟正黑體; 
+				color:#fff;
+				font-size:20px;
+			}
+			
+			#title-title{
+				position:absolute; 
+				z-index:10; 
+				margin-top:1%; 
+				left:28%; 
+				font-family:微軟正黑體; 
+				letter-spacing:15px;
+				color: #fff ;
+				font-size:60px;
+				font-weight: bold;
+			}
+		</style> 
+		<title>[NAME]</title>
+	</head>
+	<body>
+		<div>
+			<img id="findcar" src="img/icon-car.PNG" href=""></img>
+			<a id="title-title" >Thumb  a  Ride</a>
+			<a id="title-content1" >why not <span style="font-weight: bold; text-decoration:underline;">Share a Ride</span> ?</a>
+			<img id="findpeople" src="img/icon-people.PNG" href=""></img>
 		</div>
-		<div class="left-footer">
-			<img id="icon-car" src="img/icon-car.png" href=""></img>
-		</div>
-	</div>
-</body>
+			<ul id="menu">
+			<li><a href="#" id="home">Home</a></li>
+			<li><a href="0008_abgne_tw.html" id="abgne_tw" target="_blank">男丁</a></li>
+			<li><a href="0008_jellyyoyo.html" id="jellyyoyo">小神童</a></li>
+			<li><a href="http://jquery.com" id="jquery">jQuery</a></li>
+			<li><a href="http://www.flycan.com" id="flycan">飛肯</a></li>
+		</ul>
+		<div class="bhr"></div>
+		<span id="menuMask"></span>
+		<div>
+			我是首頁
+		</div>	
+	</body>
 </html>
